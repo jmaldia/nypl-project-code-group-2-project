@@ -24,7 +24,7 @@
 	--ct-blue: #273c75;
 	--ct-lite-blue: #40739e;
 	--ct-yellow: #e1b12c;
-	--ct-lite-grey: #535c68;
+	--ct-lite-grey: #dcdde1;
 	--ct-dark-grey: #2B2B2B;
 }
 
@@ -36,7 +36,7 @@
 nav {
 	width: 100%;
 	height: 85px;
-	padding: 0 50px 0 40px;
+	padding: 0 20px 0 10px;
 	position: fixed;
 	background-color: var(--ct-dark-grey);
 	border-bottom: 1px solid var(--ct-lite-grey);
@@ -65,6 +65,7 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	transform: translateX(480px);
 }
 
 .nav-bar ul {
@@ -87,6 +88,16 @@ nav {
 	text-decoration: none;
 	color: var(--ct-yellow);
 }
+
+#nav-toggle {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 2em;
+	color: var(--ct-white);
+	text-decoration: none;
+}
+
 
 
 
@@ -115,6 +126,7 @@ nav {
 	max-width: 500px;
 	font-size: 60px;
 	text-transform: uppercase;
+	color: var(--ct-white);
 }
 
 .main-header-content button {
@@ -136,26 +148,139 @@ nav {
 /*********************/
 /*     MENU PAGE     */
 /*********************/
+#container {
+	display: flex;
 
-
-
-
-
-
+}
+.ingredients {
+	font-style: italic;
+}
+.h1 {
+	font-size: 2rem;
+	
+}
+.app {
+	margin: 10px,0,10px,5px;
+}
+.signature {
+	margin: 20px;
+}
+.lady{
+	margin: 20px
+}
+ .absinthe {
+ 	
+ }
+.dark {
+	
+}
+.basic {
+	
+}
 /*********************/
 /* RESERVATIONS PAGE */
 /*********************/
+header {
+	width:auto;
+	height:400px;
+	background-color:lightgrey;
+	text-color: black;
+	padding-top:100px;
+	padding-left:100px;
+}
+h1{
+	color:black; 
+    text-align: left;
+}
 
+form{
+	width:auto;
+	height:700px;
+	background-color:grey;
+}
 
-
+header button{
+	border:none;
+    /*background-color: #ff5a5f;*/
+    padding: 15px;
+    color: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+#map {
+	width:auto;
+	height:350px;
+}
 
 
 
 /*********************/
 /*    ABOUT PAGE     */
 /*********************/
+/*{ box-sizing: border-box;*/
+/*}*/
+
+.row {
+    display: flex;
+}
+/* 2 columns that sit next to each other*/
+.column {
+    /*flex: 50%;*/
+    max-width: 1000px;
+    display: flex;
+    align-items:center;
+    /*justify-content:space-between;*/
+    width:80%;
+    margin: 0 auto;
+}
+
+.column p:last-child {
+	margin-left: 3em;
+}
+
+.background-image-about
+{
+	background-image: url("../images/about1.jpg");
+	width: 100%;
+	height: 100px;
+	background-color: #cccccc;
+}
 
 
 
 
-/*FOOTER STYLES*/
+/*********************/
+/*   FOOTER STYLES   */
+/*********************/
+
+
+
+
+
+
+
+/*********************/
+/*   MEDIA QUERIES   */
+/*********************/
+@media screen and (min-width: 650px) {
+	nav {
+		padding: 0 30px 0 20px;
+	}
+	#nav-toggle {
+		display: none;
+	}
+
+	.nav-bar {
+	    transform: translateX(0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
