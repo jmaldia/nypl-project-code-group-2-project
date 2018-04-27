@@ -24,7 +24,7 @@
 	--ct-blue: #273c75;
 	--ct-lite-blue: #40739e;
 	--ct-yellow: #e1b12c;
-	--ct-lite-grey: #dcdde1;
+	--ct-lite-grey: #535c68;
 	--ct-dark-grey: #2B2B2B;
 }
 
@@ -39,6 +39,7 @@ nav {
 	padding: 0 50px 0 40px;
 	position: fixed;
 	background-color: var(--ct-dark-grey);
+	border-bottom: 1px solid var(--ct-lite-grey);
 	display: flex;
 	justify-content: space-between;
 	color: var(--ct-white);
@@ -92,6 +93,41 @@ nav {
 /*********************/
 /*     HOME PAGE     */
 /*********************/
+.main-header {
+	width: 100%;
+	height: 800px;
+	background-image: url(../images/subway-01-blue.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-header-content {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+	color: var(--ct-white);
+}
+
+.main-header-content h1 {
+	max-width: 500px;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+
+.main-header-content button {
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: var(--ct-yellow); 
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--ct-white);
+}
 
 
 
