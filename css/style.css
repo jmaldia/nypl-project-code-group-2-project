@@ -11,6 +11,26 @@
 /*********************/
 /* DEFAULT STYLES */
 /*********************/
+.main-header-content button, button {
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: var(--ct-yellow); 
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--ct-white);
+	cursor: pointer;
+	outline: none;
+}
+
+h1 {
+	font-size: 4.6em;
+	text-transform: uppercase;
+	color: var(--ct-white)!important;
+	text-shadow: 2px 2px 5px rgba(30, 30, 30, 1);
+}
 
 
 
@@ -54,7 +74,7 @@ nav {
 
 .brand h1 {
 	font-size: 22px;
-	color: var(--ct-lite-blue);
+	color: var(--ct-yellow)!important;
 }
 
 .brand img {
@@ -106,8 +126,8 @@ nav {
 /*********************/
 .main-header {
 	width: 100%;
-	height: 800px;
-	background-image: url(../images/subway-01-blue.jpg);
+	height: 100vh;
+	background-image: url(../images/bar-01.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -122,24 +142,65 @@ nav {
 	color: var(--ct-white);
 }
 
-.main-header-content h1 {
-	max-width: 500px;
-	font-size: 60px;
-	text-transform: uppercase;
-	color: var(--ct-white);
+.main-header-content h1{
+	/*max-width: 700px;*/
+	font-family: arial;
+	font-size: 5.5em;
+	font-weight: 800;
 }
 
-.main-header-content button {
-	padding: 10px 30px;
-	margin-top: 20px;
-	background-color: var(--ct-yellow); 
-	border: none;
-	border-radius: 2px;
-	outline: none;
-	font-size: 20px;
-	text-transform: uppercase;
-	color: var(--ct-white);
+.ct-blue {
+	color: var(--ct-lite-blue);
 }
+
+.home-containers {
+	width: 100%;
+	height: 100vh;
+}
+
+.to-menu {
+	background-color: var(--ct-dark-grey);
+	background-image: url(../images/cocktail-01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.to-reserve {
+	background-color: var(--ct-blue);
+	background-image: url(../images/food-01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.to-about {
+	background-color: var(--ct-lite-blue);
+	background-image: url(../images/cocktail-02.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.home-containers-inner {
+	padding: 40px;
+	width: 80%;
+	height: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-containers-inner img {
+	width: 400px;
+}
+
+
+.home-containers-inner h1 {
+	max-width: 600px;
+}
+
 
 
 
@@ -177,6 +238,12 @@ nav {
 .basic {
 	
 }
+
+
+
+
+
+
 /*********************/
 /* RESERVATIONS PAGE */
 /*********************/
