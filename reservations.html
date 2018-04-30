@@ -30,57 +30,80 @@
     
     <!--header-->
     <header>
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="res-h1">
+        <h1>Come and have a drink with us on the High Line.
+        </h1>
         <div>
-            <button type="button">Reserve</button>
+        <div class="res-header-copy">
+        <p>Located at 7361 High Line, <br> 
+        New York, NY, 10001.<br><br>
+        Contact us or make a reservation today!</p>
+        </div>
+        <button type="button"><a href="#reservation">Reserve</a></button>
         </div>
     </header>
 
     <!--Map-->
     <div id="map"></div>
 
-    <!--Reservations-->
-    <form>
-        <input type="radio" name="contact">Contact Us
-        <input type="radio" name="reservation"> Make a Reservation
-        <br>
-        <input type="text"name="name"> Name   
-        <input type="text"name="email"> Email 
-        <input type="text"name="phone"> Phone 
-        <input type="text"name="date"> Date 
-        <input type="text"name="time"> Time
-        <input type="text"name="message"> Message 
+    <!--Reservations Form-->
+    <form id="reservation">
+        <div class="radio">
+            <label><input type="radio" name="radio"> Contact Us</label>
+            <label><input type="radio" name="radio"> Make a Reservation</label>
+        </div>
+        
+        <div class="form-box">
+        <label><div>Name</div><input type="text"name="name" placeholder="Jane Doe"></label>
+        <label><div>Email</div><input type="text"name="email" placeholder="youremail@gmail.com"></label>
+        <label><div>Phone</div><input type="text"name="phone"placeholder="646-123-4567"></label> 
+        <label><div>Date</div><input type="text"name="date"placeholder="March 02,2018"></label>  
+        <label><div>Time</div><input type="text"name="time" placeholder="7PM"></label> 
+        <label><div>Message</div><textarea name="message"placeholder="How can we help you?"></textarea></label>
+        <label><input type="submit"name="submit"></label> 
+        </div>
+    
     </form>
 
     <!--Footer-->
     <footer>
-        <div class="logo">
-            <img src="images/logo.png" style="width:250px; height: 250px;">
+        <div id="footer-container">
+        <div class="brand-footer">
+            <img src="images/logo.png">
         </div>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter-square"></i>
-        <br>
+        
+        <div class="social">
+        
+        </div>
+        
+        <div class="footer-nav">
         <ul>
+            <li><i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i></li>
             <li class="about"><a href="about.html">About</a></li>
             <li class="menu"><a href="memu.html">Menu</a></li>
             <li class="reservations"><a href="reservations.html">Reservations & Contact Us</a></li>
         </ul>
-        Copyright &copy; Cold Turkey Drinks on the Highline 2018
+        </div>
+        </div>
+        <br><br>Copyright &copy; Cold Turkey Drinks on the Highline 2018 <br> 1-646-123-4567
     </footer>
 
     <script>
-        function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(40.755587,-74.005630),
-            zoom:15,
+    function myMap() {
+        var position = new google.maps.LatLng(40.755587,-74.005630);
+        var mapProp = {
+            center: position,
+            zoom: 14,
         };
-        var marker = new google.maps.Marker({
-                  position: new google.maps.LatLng(40.755587,-74.005630),
-                  map: map,
-                });
-        var map=new google.maps.Map(document.getElementById("map"),mapProp);
-        }
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+         var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+        });
+    }
+       
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADTBhVvXFoouaYJ3ie2k2PnoTHWOYMJg8&callback=myMap"></script>
 </body>

@@ -22,10 +22,13 @@
         </div>
         <a id="nav-toggle" href="#">&#9776;</a>
     </nav>
+
     
-    <div id=container>
+    <div class="container">
+  <div>
         <h1 class="h1"> Menu </h1>
-    </div>
+        </div>
+    
     <div class="app">
         <h2> Appetizers</h2>
         <!-- ingredients in italic-->
@@ -83,18 +86,22 @@
         <p class="ingredients">Gin, fresh lemon juice, simple syrup, and dry champagne</p>
         <br>
         
-       <div class="lady">
-           <p> White Lady</p>
-           <p class="ingredients"> Dry gin</p>
-           <p class="ingredients"> Contreau</p>
-           <p class="ingredients"> Fresh Lemon Juice</p>
-           
+       <div class="lady-parent">
+           <div class="lady-items">
+                <p>White Lady</p> <!-- side by side to white lady-->
+           <p class="ingredients">Dry gin</p>
+           <p class="ingredients">Contreauk</p>
+           <p class="ingredients">Fresh lemon juice</p>
+               </div>
+           </div>
+           <div class="lady-items">
            <p>Pink Lady</p> <!-- side by side to white lady-->
            <p class="ingredients">Dry gin</p>
            <p class="ingredients">Applejack</p>
            <p class="ingredients">Fresh lemon juice</p>
            <p class="ingredients">Grenadine</p>
            <p class="ingredients">Eggwhites</p>
+       </div>
        </div>
 
        <div class="absinthe">
@@ -138,22 +145,30 @@
           <p>Start at $??</p>
        </div>
     </div>
-    
+    </div>
     <footer>
-        <div class="logo">
-            <img src="images/logo.png" style="width:250px; height: 250px;">
+        <div id="footer-container">
+        <div class="brand-footer">
+            <img src="images/logo.png">
         </div>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter-square"></i>
-        <br>
+        
+        <div class="social">
+        
+        </div>
+        
+        <div class="footer-nav">
         <ul>
-        <li class="about"><a href="about.html">About</a></li>
-        <li class="menu"><a href="memu.html">Menu</a></li>
-        <li class="reservations"><a href="reservations.html">Reservations & Contact Us</a></li>
+            <li><i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i></li>
+            <li class="about"><a href="about.html">About</a></li>
+            <li class="menu"><a href="memu.html">Menu</a></li>
+            <li class="reservations"><a href="reservations.html">Reservations & Contact Us</a></li>
         </ul>
-        Copyright &copy; Cold Turkey Drinks on the Highline 2018
-    </footer>  
+        </div>
+        </div>
+        <br><br>Copyright &copy; Cold Turkey Drinks on the Highline 2018 <br> 1-646-123-4567
+    </footer>
     
 </body>
 </html>
