@@ -220,12 +220,15 @@ nav {
 /*     MENU PAGE     */
 /*********************/
 #container {
-width:auto;
+width:100%;
 height:100vh;
 }
 .menu{
-	margin-bottom:200px;
-	background-image:u;
+	margin-bottom:50px;
+	background-image:url(../images/bar-drinks.jpg);
+}
+.menu h1 {
+	max-width:400px;
 }
 .ingredients {
 	font-style: italic;
@@ -236,26 +239,33 @@ height:100vh;
 	
 }
 .app {
-	margin: 10px,0,10px,5px;
+	margin: 0,0,10px,5px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.salad {
+	text-align: center;
 }
 .signature {
-	margin: 20px;
+	padding-top: 40px;
+	text-align: center;
 }
+
 .lady-parent{
     display: flex;
     justify-content: center;
     text-align: center;
-    color:#fff;
-    margin:50px;
+    margin:0px;
     background-color:#2B2B2B;
     border-color: #e1b12c;
 }
 .lady-items {
     padding-right:130px;
+    padding-top: 55px;
 }
 .lady-items img {
 	width:200px;
-	height:200px;
+	height:cover;
 }
  .absinthe-parent {
  	display: flex;
@@ -264,35 +274,31 @@ height:100vh;
      background-position: center;
     height: 500px;
 	padding:50px;
-     margin:60px 0 60px 0;
  }
 .absinthe-items {
-    padding-right:700px;
-    padding-left: 100;
+    justify-content: center;
+    padding: 50px 650px 50px 200px;
+    font-size: 2rem;
 }
 .dark {
     display: flex;
-	margin-bottom: 50px;
+     background-color:#2B2B2B;
 }
-.dark h3 {
+.dark h3{
     margin:20px;
 }
 .twelve{
     margin-bottom: 50px;
 }
 .twelve img{
-	width:100px!important;
-	height:100px;
+padding: 30px;
+	width:300px;
 }
-.basic {
-	
+#shots {
+	background-color: #e1b12c;
+	padding-bottom: 20px;
+	text-align: center;
 }
-
-
-
-
-
-
 /*********************/
 /* RESERVATIONS PAGE */
 /*********************/
@@ -304,8 +310,8 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 20%;
-	padding-left: 20%;
+    padding-top:22%;
+	padding-left:10%;
 }
 
 .res-h1 h1{
@@ -394,23 +400,22 @@ input[type=submit]:hover {
 /*********************/
 /*    ABOUT PAGE     */
 /*********************/
-.background-image-about {
 
-color:#e1b12c;
 
-}
-h2{
-	font-size:200%;
-	font-weight:30px;
-    
-}
 .row {
+	height: auto;
+	min-height:400px;
     display: flex;
+    align-items:flex-start;
+    max-width:1000px;
+    width:80%;
+    margin:0 auto;
+    
 }
 /* 2 columns that sit next to each other*/
 .column {
     /*flex: 50%;*/
-    max-width: 1000px;
+   
     display: flex;
     align-items:center;
     /*justify-content:space-between;*/
@@ -418,26 +423,60 @@ h2{
     margin: 0 auto;
 }
 
-.column p:last-child {
-	margin-left: 3em;
+.column p, .column2 p{
+font-size:22px;
+padding:20px;
 }
 
-.background-image-about
-{
+.background-image-about-top{
+
+	/*font-size:30px;*/
+	/*font-weight:900;*/
+	/*font-style:bold;*/
 	width: 100%;
-	height: 400px;
+	height: 100vh;
+	background-image: url(../images/about1.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	
+}
+.about-history p{
+	font-size: 30px;
+	color: var(--ct-white);
+}
+.background-image-about-bottom
+{
+	
+	width: 100%;
+	height: 100vh;
+	/*font-size:40px;*/
+	/*font-weight:900;*/
+	/*font-style:bold;*/
 	background-image: url(../images/about2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+	/*background-position: 0 -200px;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
-
-
-
-
-
+.background-image-about-bottom h2
+{
+padding: 20px;	
+}
+.background-image-about-bottom p
+{
+padding: 20px;
+color: white;
+}
 /*********************/
 /*   FOOTER STYLES   */
 /*********************/
@@ -492,9 +531,6 @@ footer img{
 
 
 
-
-
-
 /*********************/
 /*   MEDIA QUERIES   */
 /*********************/
@@ -532,14 +568,3 @@ footer img{
 		font-size: 2em;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
