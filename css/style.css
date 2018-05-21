@@ -219,86 +219,61 @@ nav {
 /*********************/
 /*     MENU PAGE     */
 /*********************/
-#container {
-width:100%;
-height:100vh;
-}
-.menu{
-	margin-bottom:50px;
+.menu {
+	width: 100%;
+	height: 100vh;
 	background-image:url(../images/bar-drinks.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .menu h1 {
-	max-width:400px;
+	max-width:600px;
 }
+
 .ingredients {
 	font-style: italic;
 	color: #e1b12c;
 }
+
 .h1 {
 	font-size: 2rem;
-	
 }
-.app {
-	margin: 0,0,10px,5px;
-	padding-bottom: 20px;
-	text-align: center;
+
+.app h2, .salad h2, .signature h2 {
+	font-size: 1.5rem;
+	padding-bottom: 25px;
 }
-.salad {
-	text-align: center;
-}
-.signature {
-	padding-top: 40px;
+
+.app, .salad, .signature {
+	width: 80%;
+	margin: 120px auto; 
 	text-align: center;
 }
 
-.lady-parent{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin:0px;
-    background-color:#2B2B2B;
-    border-color: #e1b12c;
+.salads {
+	width: 100%;
+	height: 500px;
+	background-image:url(../images/food-01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.lady-items {
-    padding-right:130px;
-    padding-top: 55px;
+
+.drinks {
+	width: 100%;
+	height: 500px;
+	background-image:url(../images/cocktail-02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 }
-.lady-items img {
-	width:200px;
-	height:cover;
-}
- .absinthe-parent {
- 	display: flex;
- background:url(../images/absinthe.jpg) no-repeat;
-     background-size: cover;
-     background-position: center;
-    height: 500px;
-	padding:50px;
- }
-.absinthe-items {
-    justify-content: center;
-    padding: 50px 650px 50px 200px;
-    font-size: 2rem;
-}
-.dark {
-    display: flex;
-     background-color:#2B2B2B;
-}
-.dark h3{
-    margin:20px;
-}
-.twelve{
-    margin-bottom: 50px;
-}
-.twelve img{
-padding: 30px;
-	width:300px;
-}
-#shots {
-	background-color: #e1b12c;
-	padding-bottom: 20px;
-	text-align: center;
-}
+
+
+
+
+
 /*********************/
 /* RESERVATIONS PAGE */
 /*********************/
@@ -310,13 +285,14 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top:22%;
-	padding-left:10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .res-h1 h1{
-	max-width: 500px;
-	font-size: 30px;
+	max-width: 600px;
+	/* font-size: 30px; */
 	text-transform: uppercase;
 	color: var(--ct-white);
 }
@@ -347,6 +323,7 @@ form{
 .radio label {
 	margin: 0 15px;
 }
+
 .form-box {
 	width:50%;
 	margin:1% 25% 1% 25%;
@@ -371,6 +348,7 @@ form{
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=submit] {
     width: 100%;
     background-color: var(--ct-yellow);
@@ -381,6 +359,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 textarea{
 	flex: 1 1;
 	height:150px;
@@ -391,6 +370,7 @@ textarea{
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=submit]:hover {
     background-color: var(--ct-lite-grey);
 }
@@ -400,8 +380,6 @@ input[type=submit]:hover {
 /*********************/
 /*    ABOUT PAGE     */
 /*********************/
-
-
 .row {
 	height: auto;
 	min-height:400px;
@@ -409,81 +387,77 @@ input[type=submit]:hover {
     align-items:flex-start;
     max-width:1000px;
     width:80%;
-    margin:0 auto;
-    
+    margin:75px auto;
 }
+
 /* 2 columns that sit next to each other*/
 .column {
-    /*flex: 50%;*/
-   
     display: flex;
     align-items:center;
-    /*justify-content:space-between;*/
     width:80%;
     margin: 0 auto;
 }
 
 .column p, .column2 p{
-font-size:22px;
-padding:20px;
+	font-size:22px;
+	padding:20px;
 }
 
-.background-image-about-top{
-
-	/*font-size:30px;*/
-	/*font-weight:900;*/
-	/*font-style:bold;*/
+.background-image-about-top {
 	width: 100%;
 	height: 100vh;
 	background-image: url(../images/about1.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment:fixed;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-	
 }
-.about-history p{
+
+.main-header-content .about-1 {
+	margin-bottom: 20;
+	text-align: center;
+}
+
+.about-history p {
+	padding: 20px 0;
 	font-size: 30px;
 	color: var(--ct-white);
+	text-shadow: 2px 2px 5px rgba(30, 30, 30, 1);
 }
-.background-image-about-bottom
-{
-	
+
+.background-image-about-bottom {
 	width: 100%;
 	height: 100vh;
-	/*font-size:40px;*/
-	/*font-weight:900;*/
-	/*font-style:bold;*/
 	background-image: url(../images/about2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	/*background-position: 0 -200px;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
 
+.background-image-about-bottom h2 {
+	padding: 20px;	
 }
-.background-image-about-bottom h2
-{
-padding: 20px;	
+
+.background-image-about-bottom p {
+	padding: 20px;
+	color: white;
 }
-.background-image-about-bottom p
-{
-padding: 20px;
-color: white;
-}
+
+
+
+
 /*********************/
 /*   FOOTER STYLES   */
 /*********************/
 footer {
 	width: 100%;
-	height: 200px;
-	padding: 0 20px 0 10px;
+	height: 250px;
+	padding: 0 20px 30px 10px;
 	background-color: var(--ct-dark-grey);
 	border-bottom: 1px solid var(--ct-lite-grey);
 	display: block;
@@ -531,6 +505,10 @@ div ul li:not(:first-child) {
 p.copyright{
 	text-align:center;
 	color: var(--ct-yellow);
+}
+
+.copyright {
+	padding-bottom: 30px;
 }
 
 
